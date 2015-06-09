@@ -7,8 +7,16 @@ app.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
 });
 
-app.get('/about',function(req,res){
-  res.sendFile(path.join(__dirname+'/about.html'));
+app.get('/contact',function(req,res){
+  res.sendFile(path.join(__dirname+'/contact.html'));
+});
+
+app.get('/schedule',function(req,res){
+  res.sendFile(path.join(__dirname+'/schedule.html'));
+});
+
+app.get('/signup',function(req,res){
+  res.sendFile(path.join(__dirname+'/signup.html'));
 });
 
 app.get('/sitemap',function(req,res){
