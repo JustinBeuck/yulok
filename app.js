@@ -4,23 +4,19 @@ var path    = require("path");
 
 
 app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/index.html'));
+  res.sendFile(path.join(__dirname+'/views/index.html'));
 });
 
 app.get('/contact',function(req,res){
-  res.sendFile(path.join(__dirname+'/contact.html'));
+  res.sendFile(path.join(__dirname+'/views/contact.html'));
 });
 
 app.get('/schedule',function(req,res){
-  res.sendFile(path.join(__dirname+'/schedule.html'));
+  res.sendFile(path.join(__dirname+'/views/schedule.html'));
 });
 
 app.get('/signup',function(req,res){
-  res.sendFile(path.join(__dirname+'/signup.html'));
-});
-
-app.get('/sitemap',function(req,res){
-  res.sendFile(path.join(__dirname+'/sitemap.html'));
+  res.sendFile(path.join(__dirname+'/views/signup.html'));
 });
 
 app.use("/css", express.static(__dirname + '/css'));
