@@ -23,6 +23,6 @@ app.use("/css", express.static(__dirname + '/css'));
 
 app.use("/js", express.static(__dirname + '/js'));
 
-app.listen(3000);
-
-console.log("Running at Port 3000");
+http.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
