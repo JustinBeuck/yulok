@@ -19,6 +19,10 @@ app.get('/signup',function(req,res){
   res.sendFile(path.join(__dirname+'/views/signup.html'));
 });
 
+app.post('/signupplayer', function(req, res) {
+  console.log(req);
+});
+
 app.use("/css", express.static(__dirname + '/css'));
 
 app.use("/js", express.static(__dirname + '/js'));

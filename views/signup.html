@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -74,30 +75,67 @@
     <div class="container">
 
         <div class="row">
-        <h2>Sign Up Here !</h2>
             <div class="box">
+            <h2>Sign Up Kickball Player Here !</h2>
+            <form action="/signupplayer" method="post">
                 <div class="col-lg-12">
-                    <input width="500" type="text" name="fullName" placeholder="Enter Full Name">
-                    <input type="text" name="date" placeholder="Date">
-                </div>
-                <div class="col-lg-12">
-                    <input type="text" name="addressOne" placeholder="Enter Address">
-                    <input type="text" name="addressTwo" placeholder="Enter Address Two">
-                </div>
-                <div>
-                    <input type="text" name="city" placeholder="Enter City">
-                    <input type="text" name="state" placeholder="Enter State">
-                    <input type="text" name="zip" placeholder="Enter Zip">
+                    Full Name: <input class="fullname" type="text" name="fullName">
+                    Date: <input class="date" type="text" name="date">
                 </div>
                 <div class="col-lg-12">
-                    <input type="text" name="phoneNumber" placeholder="Phone Number">
-                    <input type="text" name="emailAddress" placeholder="Email Address">
+                    Address 1: <input class="address" type="text" name="addressOne">
                 </div>
                 <div class="col-lg-12">
-                    <input type="text" name="school" placeholder="Enter School Name">
-                    <input type="text" name="grade" placeholder="Enter Grade">
-                    <input type="text" name="age" placeholder="Enter Age">
+                    Address 2: <input class="address" type="text" name="addressTwo">
                 </div>
+                <div class="col-lg-12">
+                    City: <input type="text" name="city">
+                    State: <input type="text" name="state">
+                    Zip: <input type="text" name="zip">
+                </div>
+                <div class="col-lg-12">
+                    Phone Number: <input type="text" name="phoneNumber">
+                    E-Mail: <input type="text" name="emailAddress">
+                </div>
+                <div class="col-lg-12">
+                    School Name: <input type="text" name="school">
+                    Grade: <input type="text" name="grade">
+                    Age: <input type="text" name="age">
+                </div>
+                <div class="col-lg-12">
+                    T-Shirt Size: <input type="text" name="shirt">
+                </div>
+            </div>
+            <div class="box">
+                <h2>Parent or Guardian Information</h2>
+                <div class="col-lg-12">
+                    Full Name: <input class="fullname" type="text" name="fullName">
+                    Date: <input class="date" type="text" name="date">
+                </div>
+                <div class="col-lg-12">
+                    Address 1: <input class="address" type="text" name="addressOne">
+                </div>
+                <div class="col-lg-12">
+                    Address 2: <input class="address" type="text" name="addressTwo">
+                </div>
+                <div class="col-lg-12">
+                    City: <input type="text" name="city">
+                    State: <input type="text" name="state">
+                    Zip: <input type="text" name="zip">
+                </div>
+                <div class="col-lg-12">
+                    Home Phone: <input type="text" name="homephone">
+                    Work Phone: <input type="text" name="workphone">
+                    Cell Phone: <input type="text" name="cellphone">
+                </div>
+                <div class="col-lg-12">
+                    E-Mail Address: <input class="emailaddress" type="text" name="emailaddress">
+                </div>
+                <div class="true-center"> 
+                <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                </div>
+                </form>
+            </div>
                 <div class="clearfix"></div>
             </div>
         </div>
