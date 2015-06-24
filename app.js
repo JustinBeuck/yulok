@@ -12,6 +12,14 @@ app.get('/contact',function(req,res){
   res.sendFile(path.join(__dirname+'/views/contact.html'));
 });
 
+// app.get('/schedule',function(req,res){
+//   res.sendFile(path.join(__dirname+'/views/schedule.html'));
+// });
+
+app.get('/aboutus',function(req,res){
+  res.sendFile(path.join(__dirname+'/views/aboutus.html'));
+});
+
 app.use("/css", express.static(__dirname + '/css'));
 
 app.use("/js", express.static(__dirname + '/js'));
